@@ -10,7 +10,7 @@ OPENAI_API_KEY = os.environ.get("sk-proj-uD6z19l5WmDQOzzdkIqi49esHNcoIFyZJGg0lIQ
 OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-3.5-turbo")  # قابل تغییر
 WEBHOOK_SECRET = os.environ.get("Mobinforker15")  # یک مقدار تصادفی امن مثل "supersecret123"
 PORT = int(os.environ.get("PORT", 5000))
-EXTERNAL_URL = os.environ.get("https://your-app.onrender.com")  # آدرس اپلیکیشن روی Render (https://your-app.onrender.com)
+EXTERNAL_URL = os.environ.get("https://bot-vgmr.onrender.com")  # آدرس اپلیکیشن روی Render (https://bot-vgmr.onrender.com)
 
 if not TELEGRAM_TOKEN or not OPENAI_API_KEY:
     raise RuntimeError("لطفاً TELEGRAM_TOKEN و OPENAI_API_KEY را به عنوان env vars تنظیم کنید.")
