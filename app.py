@@ -5,12 +5,12 @@ import openai
 import logging
 
 # config
-TELEGRAM_TOKEN = os.environ.get("8477905167:AAF7ZmAam7XumyFQOGqxz5_MKh-nCiTCAYc")
-OPENAI_API_KEY = os.environ.get("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")
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-3.5-turbo")  # قابل تغییر
-WEBHOOK_SECRET = os.environ.get("Mobinforker15")  # یک مقدار تصادفی امن مثل "supersecret123"
+WEBHOOK_SECRET = os.environ.get("WEBHOOK_SECRET")  # یک مقدار تصادفی امن مثل "supersecret123"
 PORT = int(os.environ.get("PORT", 5000))
-EXTERNAL_URL = os.environ.get("https://bot-vgmr.onrender.com")  # آدرس اپلیکیشن روی Render (https://bot-vgmr.onrender.com)
+EXTERNAL_URL = os.environ.get("EXTERNAL_URL")  # آدرس اپلیکیشن روی Render (https://bot-vgmr.onrender.com)
 
 if not TELEGRAM_TOKEN or not OPENAI_API_KEY:
     raise RuntimeError("لطفاً TELEGRAM_TOKEN و OPENAI_API_KEY را به عنوان env vars تنظیم کنید.")
