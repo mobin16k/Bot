@@ -95,7 +95,7 @@ def tg_webhook():
 
         # میشه فرمان /start و ... رو جدا هندل کرد
         if text and text.startswith("/start"):
-            send_telegram_message(chat_id, "سلام! من باتی هستم که به ChatGPT وصل هستم. چیزی بفرست تا پاسخ بدم.", reply_to_message_id=message_id)
+            send_telegram_message(chat_id, "سلام لیدر پارام من بات هوشمند دیابت پلاس مددی هستم و توسط مبین ساخته شدم که مجهز به هوش مصنوعی هست تقدیم به شما🌹", reply_to_message_id=message_id)
             return jsonify({"ok": True})
 
         if not text:
